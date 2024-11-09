@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:tugas1/Pages/MyAppointment.dart';
 import 'package:tugas1/Pages/RequestAppointment.dart';
+import 'package:tugas1/Pages/Search.dart';
+import 'package:tugas1/Pages/TreatmentInfo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -104,13 +106,13 @@ class HomeScreen extends StatelessWidget {
                       context: context,
                       icon: Icons.add_box_outlined,
                       label: "Treatment Info",
-                      page: const RequestAppointmentPage()),
+                      page: TreatmentInfoPage()),
                   // Search
                   menuItem(
                       context: context,
                       icon: Icons.search,
                       label: "Search",
-                      page: const RequestAppointmentPage()),
+                      page: const SearchPage()),
                 ],
               ),
             ),

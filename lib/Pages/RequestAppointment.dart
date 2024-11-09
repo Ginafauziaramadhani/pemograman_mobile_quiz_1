@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
 class RequestAppointmentPage extends StatefulWidget {
   const RequestAppointmentPage({super.key});
@@ -140,7 +139,8 @@ class _RequestAppointmentPageState extends State<RequestAppointmentPage> {
       final email = _emailController.text;
 
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Appointment Requested for $name")),
+        SnackBar(
+            content: Text("Appointment Requested for $name with email $email")),
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
