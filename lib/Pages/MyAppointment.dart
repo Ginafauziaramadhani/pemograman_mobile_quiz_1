@@ -30,6 +30,8 @@ class MyAppointmentsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("My Appointments"),
+        backgroundColor: Colors.teal[700],
+        foregroundColor: Colors.white,
       ),
       body: ListView.builder(
         padding: const EdgeInsets.all(8.0),
